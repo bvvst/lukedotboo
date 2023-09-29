@@ -17,8 +17,7 @@
 
   <meta property="og:url" content="https://www.luke.boo/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="luke - fullstack designer" />
-  <meta property="og:description" content="luke - fullstack designer" />
+  <meta property="og:title" content="my portfolio" />
   <meta property="og:image" content="https://www.luke.boo/og.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
