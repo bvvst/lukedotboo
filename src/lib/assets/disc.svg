@@ -1,0 +1,21 @@
+<svg width="116" height="116" viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="58" cy="58" r="57.5" fill="#F7F7F7" stroke="#E4E4E4"/>
+<circle cx="58" cy="58" r="54.5" fill="url(#paint0_angular_65_1785)" stroke="url(#paint1_linear_65_1785)"/>
+<circle cx="58" cy="58" r="14.5" fill="#F7F7F7" stroke="#D5D5D5"/>
+<circle cx="58" cy="58" r="8.5" fill="#F7F7F7" stroke="#D5D5D5"/>
+<defs>
+<radialGradient id="paint0_angular_65_1785" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(58 58) rotate(90) scale(55)">
+<stop stop-color="#B3B3B3"/>
+<stop offset="0.078125" stop-color="#EAEAEA" stop-opacity="0"/>
+<stop offset="0.197917" stop-color="#B2B2B2" stop-opacity="0.628866"/>
+<stop offset="0.328125" stop-color="#EAEAEA" stop-opacity="0"/>
+<stop offset="0.588542" stop-color="#C0C0C0" stop-opacity="0.618415"/>
+<stop offset="0.802083" stop-color="#D9D9D9" stop-opacity="0.6"/>
+<stop offset="1" stop-color="#B2B2B2"/>
+</radialGradient>
+<linearGradient id="paint1_linear_65_1785" x1="58" y1="3" x2="58" y2="113" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D5D5D5"/>
+<stop offset="1" stop-color="#D5D5D5" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
