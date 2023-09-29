@@ -1,6 +1,4 @@
 <script>
-  import Card from "$lib/components/Card.svelte";
-  import Disc from "$lib/assets/disc.png";
   import NotchEdge from "$lib/assets/notch-edge.svg";
   import EmptyCard from "$lib/components/EmptyCard.svelte";
   import MoreSoonCard from "$lib/components/MoreSoonCard.svelte";

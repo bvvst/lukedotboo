@@ -4,7 +4,7 @@
   let left = "0";
   let top = "0";
   let clicked = false;
-  let visible = true;
+  let visible = false;
 
   onMount(() => {
     let animationFrameId: number;
@@ -14,6 +14,8 @@
       if (animationFrameId !== null) {
         cancelAnimationFrame(animationFrameId);
       }
+
+      visible = true;
 
       // Request the next frame
       animationFrameId = requestAnimationFrame(() => {
