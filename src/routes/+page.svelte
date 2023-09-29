@@ -1,15 +1,19 @@
-<script>
+<script lang="ts">
   import NotchEdge from "$lib/assets/notch-edge.svg";
   import EmptyCard from "$lib/components/EmptyCard.svelte";
   import MoreSoonCard from "$lib/components/MoreSoonCard.svelte";
-  // notch
-  // https://stackoverflow.com/questions/31765345/how-to-round-out-corners-when-using-css-clip-path
+  import { onMount } from "svelte";
 
-  // static/fonts/SpaceGrotesk-Bold.ttf
-  // static/fonts/SpaceGrotesk-Light.ttf
-  // static/fonts/SpaceGrotesk-Medium.ttf
-  // static/fonts/SpaceGrotesk-Regular.ttf
-  // static/fonts/SpaceGrotesk-SemiBold.ttf
+  onMount(() => {
+    const container: HTMLElement | null =
+      document.querySelector(".horizontal-scroll");
+    container?.addEventListener("wheel", function (e: WheelEvent) {
+      if (e.deltaY) {
+        e.preventDefault(); // Prevents vertical scroll
+        container.scrollLeft += e.deltaY * 0.4; // Adjust scrolling speed
+      }
+    });
+  });
 </script>
 
 <main class="h-screen flex flex-col">
@@ -23,7 +27,7 @@
       class="absolute top-0 bottom-0 left-0 w-14 bg-gradient-to-l from-transparent to-[#EEEEEE] z-10"
     />
     <div
-      class="grid grid-rows-3 grid-flow-col gap-4 p-8 px-14 w-full max-w-7xl mx-auto overflow-scroll"
+      class="grid grid-rows-3 grid-flow-col gap-4 p-8 px-14 w-full max-w-7xl mx-auto horizontal-scroll"
     >
       <MoreSoonCard />
 
@@ -69,3 +73,17 @@
     <div class="w-full bg-[#DBDCDD] min-h-[70px]" />
   </div>
 </main>
+
+<style>
+  .horizontal-scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+
+  .horizontal-scroll::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
+  }
+</style>
