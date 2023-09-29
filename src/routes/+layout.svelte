@@ -11,5 +11,22 @@
   });
 </script>
 
+<svelte:head>
+  <title>luke</title>
+  <meta name="description" content="fullstack designer" />
+
+  <meta property="og:url" content="https://www.luke.boo/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="luke - fullstack designer" />
+  <meta property="og:description" content="luke - fullstack designer" />
+  <meta property="og:image" content="https://www.luke.boo/og.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="luke.boo" />
+  <meta property="twitter:url" content="https://www.luke.boo/" />
+  <meta name="twitter:title" content="luke" />
+  <meta name="twitter:description" content="fullstack designer" />
+  <meta name="twitter:image" content="https://www.luke.boo/og.png" />
+</svelte:head>
 <Cursor />
 <slot />
