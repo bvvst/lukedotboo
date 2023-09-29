@@ -1,6 +1,7 @@
 <script lang="ts">
   import "../app.css";
   import { onMount } from "svelte";
+  import Cursor from "$lib/components/Cursor.svelte";
 
   onMount(() => {
     if ("paintWorklet" in CSS) {
@@ -10,4 +11,5 @@
   });
 </script>
 
+<Cursor />
 <slot />

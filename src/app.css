@@ -35,8 +35,15 @@
   html {
     @apply font-space selection:bg-[#DBDCDD]/50;
   }
-  /* * {
-    @apply border-red-500 border;
+  /* button {
+    cursor: none;
+  } */
+  * {
+    cursor: none !important;
+    /* cursor: url("cursor.svg"), auto !important; */
+  }
+  /* *:active {
+    cursor: url("cursor-clicked.svg"), auto;
   } */
 }
 
