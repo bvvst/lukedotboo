@@ -4,7 +4,7 @@
   let left = "0";
   let top = "0";
   let clicked = false;
-  let visible = false;
+  let visible = true;
 
   onMount(() => {
     let animationFrameId: number;
