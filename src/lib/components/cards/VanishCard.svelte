@@ -23,7 +23,7 @@
       secure vanishing notes
     </p>
     <div
-      class="absolute mx-auto bg-[#6F32F0] w-48 rounded-[50%] h-12 blur-[30px] -top-8"
+      class="absolute mx-auto bg-[#6F32F0] w-48 rounded-[50%] h-12 blur-[30px] -top-8 group-hover:translate-y-4 group-hover:scale-110 transition-transform"
     />
     <div
       class="absolute mx-auto bg-[#CDB8FC] w-48 rounded-[50%] h-12 blur-[30px] -bottom-8"

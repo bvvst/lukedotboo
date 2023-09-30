@@ -2,6 +2,7 @@
   import "../app.css";
   import { onMount } from "svelte";
   import Cursor from "$lib/components/Cursor.svelte";
+  import Trail from "$lib/components/Trail.svelte";
 
   onMount(() => {
     if ("paintWorklet" in CSS) {
@@ -27,5 +28,7 @@
   <meta name="twitter:description" content="fullstack designer" />
   <meta name="twitter:image" content="https://www.luke.boo/og.png" />
 </svelte:head>
-<Cursor />
-<slot />
+<div class="crt">
+  <Cursor />
+  <slot />
+</div>

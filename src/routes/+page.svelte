@@ -6,6 +6,8 @@
   import FilterCard from "$lib/components/cards/FilterCard.svelte";
   import GomokuCard from "$lib/components/cards/GomokuCard.svelte";
   import VanishCard from "$lib/components/cards/VanishCard.svelte";
+  import GithubCard from "$lib/components/cards/GithubCard.svelte";
+  import SpotifyCard from "$lib/components/cards/SpotifyCard.svelte";
 
   onMount(() => {
     const container: HTMLElement | null =
@@ -19,7 +21,7 @@
   });
 </script>
 
-<main class="h-screen flex flex-col crt">
+<main class="h-screen fixed w-screen overflow-hidden flex flex-col">
   <div
     class="flex flex-col justify-start items-start m-auto max-w-7xl relative w-full"
   >
@@ -37,11 +39,11 @@
       <EmptyCard />
 
       <FilterCard />
-      <EmptyCard />
+      <GithubCard />
       <EmptyCard />
 
       <GomokuCard />
-      <EmptyCard />
+      <SpotifyCard />
       <EmptyCard />
 
       <EmptyCard />
@@ -58,22 +60,31 @@
     </div>
   </div>
 
-  <div class="w-full flex flex-col">
+  <div class="w-full flex flex-col sm:mb-0">
     <div class="flex">
-      <div class="w-full bg-[#DBDCDD] h-[70px]" />
-      <img class="w-[170px] h-[70px] -scale-x-100" src={NotchEdge} alt="" />
-      <div class="w-[100rem]">
+      <div class="w-full overflow-hidden bg-[#DBDCDD] h-[50px] sm:h-[70px]" />
+      <img
+        class="w-[122px] h-[50px] sm:w-[170px] sm:h-[70px] -scale-x-100"
+        src={NotchEdge}
+        alt=""
+      />
+      <div class="w-[40rem] sm:w-[100rem]">
         <p
-          class="text-2xl font-medium text-center text-[#010313]/50 translate-y-3 w-full"
+          class="sm:text-2xl font-medium text-center text-[#010313]/50 translate-y-3 w-full"
         >
           my projects
         </p>
       </div>
-      <img class="w-[170px] h-[70px]" src={NotchEdge} alt="" />
-      <div class="w-full bg-[#DBDCDD] h-[70px]" />
+      <img
+        class="w-[122px] h-[50px] sm:h-[70px] sm:w-[170px]"
+        src={NotchEdge}
+        alt=""
+      />
+      <div class="w-full bg-[#DBDCDD] h-[50px] sm:h-[70px]" />
     </div>
-    <div class="w-full bg-[#DBDCDD] min-h-[70px]" />
+    <div class="w-full bg-[#DBDCDD] h-[40px] sm:min-h-[70px]" />
   </div>
+  <div class="block sm:hidden w-full h-20 bg-[#DBDCDD]" />
 </main>
 
 <style>
