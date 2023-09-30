@@ -19,7 +19,7 @@
   });
 </script>
 
-<main class="h-screen flex flex-col">
+<main class="h-screen flex flex-col crt">
   <div
     class="flex flex-col justify-start items-start m-auto max-w-7xl relative w-full"
   >
