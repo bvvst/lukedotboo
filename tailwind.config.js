@@ -14,6 +14,7 @@ export default {
     },
   },
   plugins: [
+    require("tailwindcss-image-rendering")(),
     plugin(
       function ({ matchUtilities, theme }) {
         matchUtilities(

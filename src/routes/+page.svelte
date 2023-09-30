@@ -8,6 +8,9 @@
   import VanishCard from "$lib/components/cards/VanishCard.svelte";
   import GithubCard from "$lib/components/cards/GithubCard.svelte";
   import SpotifyCard from "$lib/components/cards/SpotifyCard.svelte";
+  import MiiChannel from "$lib/components/cards/MiiChannel.svelte";
+  import Twitter from "$lib/assets/twitter.svg";
+  import Email from "$lib/assets/email.svg";
 
   onMount(() => {
     const container: HTMLElement | null =
@@ -36,14 +39,14 @@
     >
       <MoreSoonCard />
       <VanishCard />
+      <SpotifyCard />
+
+      <MiiChannel />
+      <GomokuCard />
       <EmptyCard />
 
       <FilterCard />
       <GithubCard />
-      <EmptyCard />
-
-      <GomokuCard />
-      <SpotifyCard />
       <EmptyCard />
 
       <EmptyCard />
@@ -56,7 +59,24 @@
     </div>
   </div>
 
-  <div class="w-full flex flex-col sm:mb-0">
+  <div class="w-full flex flex-col sm:mb-0 relative">
+    <a
+      href="https://twitter.com/bvvst"
+      class="z-10 absolute transition-shadow shadow-md hover:shadow-lg rounded-full flex ring-1 ring-[#C5C7CA] bg-[#EEEEEE] w-10 h-10 sm:h-20 sm:w-20 top-2.5 left-2.5 sm:top-6 sm:left-6"
+    >
+      <img class="m-auto" src={Twitter} alt="" />
+    </a>
+    <a
+      href="mailto:hi@luke.boo"
+      class="z-10 absolute transition-shadow shadow-md hover:shadow-lg rounded-full flex ring-1 ring-[#C5C7CA] bg-[#EEEEEE] w-10 h-10 sm:h-20 sm:w-20 top-2.5 right-2.5 sm:top-6 sm:right-6"
+    >
+      <img class="m-auto" src={Email} alt="" />
+    </a>
+    <p
+      class="absolute left-0 right-0 bottom-2 sm:bottom-6 text-sm font-medium text-center whitespace-nowrap text-[#010313]/30"
+    >
+      not affiliated with nintendo
+    </p>
     <div class="flex">
       <div class="w-full overflow-hidden bg-[#DBDCDD] h-[50px] sm:h-[70px]" />
       <img
@@ -70,6 +90,11 @@
         >
           luke.boo
         </p>
+        <!-- <p
+          class="text-sm font-medium text-center whitespace-nowrap text-[#010313]/30 translate-y-3 w-full"
+        >
+          not affiliated with nintendo
+        </p> -->
       </div>
       <img
         class="w-[122px] h-[50px] sm:h-[70px] sm:w-[170px]"
@@ -80,7 +105,7 @@
     </div>
     <div class="w-full bg-[#DBDCDD] h-[40px] sm:min-h-[70px]" />
   </div>
-  <div class="block sm:hidden w-full h-24 bg-[#DBDCDD]" />
+  <div class="block sm:hidden w-full h-28 bg-[#DBDCDD]" />
 </main>
 
 <style>

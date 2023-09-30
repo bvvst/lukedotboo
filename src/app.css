@@ -131,7 +131,7 @@
 
 @layer base {
   html {
-    @apply font-space selection:bg-[#DBDCDD]/50;
+    @apply font-space selection:bg-[#DBDCDD]/80;
   }
   * {
     cursor: url("/crt-cursor.png"), auto !important;
