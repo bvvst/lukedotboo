@@ -108,7 +108,7 @@
 <img
   style="left: {left}; top: {top}; display: {visible ? 'block' : 'none'}"
   class={clsx(
-    "crt absolute drop-shadow-md z-10 pointer-events-none origin-top-left transition-transform opacity-50",
+    "crt absolute drop-shadow-md z-10 pointer-events-none origin-top-left transition-transform opacity-0 md:opacity-50",
     clicked && "scale-105"
   )}
   src="/trail.svg"

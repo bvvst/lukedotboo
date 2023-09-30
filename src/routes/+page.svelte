@@ -26,13 +26,13 @@
     class="flex flex-col justify-start items-start m-auto max-w-7xl relative w-full"
   >
     <div
-      class="absolute top-0 bottom-0 right-0 w-14 bg-gradient-to-r from-transparent to-[#EEEEEE] z-10"
+      class="hidden md:block absolute top-0 bottom-0 right-0 w-14 bg-gradient-to-r from-transparent to-[#EEEEEE] z-10"
     />
     <div
-      class="absolute top-0 bottom-0 left-0 w-14 bg-gradient-to-l from-transparent to-[#EEEEEE] z-10"
+      class="hidden md:block absolute top-0 bottom-0 left-0 w-14 bg-gradient-to-l from-transparent to-[#EEEEEE] z-10"
     />
     <div
-      class="grid grid-rows-3 grid-flow-col gap-4 p-8 px-14 w-full max-w-7xl mx-auto horizontal-scroll"
+      class="grid grid-rows-3 grid-flow-col gap-4 p-2 px-4 md:p-8 md:px-14 w-full max-w-7xl mx-auto horizontal-scroll"
     >
       <MoreSoonCard />
       <VanishCard />
@@ -50,13 +50,9 @@
       <EmptyCard />
       <EmptyCard />
 
-      <EmptyCard />
-      <EmptyCard />
-      <EmptyCard />
-
-      <EmptyCard />
-      <EmptyCard />
-      <EmptyCard />
+      <EmptyCard soft={true} />
+      <EmptyCard soft={true} />
+      <EmptyCard soft={true} />
     </div>
   </div>
 
@@ -68,11 +64,11 @@
         src={NotchEdge}
         alt=""
       />
-      <div class="w-[40rem] sm:w-[100rem]">
+      <div class=" sm:w-[100rem]">
         <p
-          class="sm:text-2xl font-medium text-center text-[#010313]/50 translate-y-3 w-full"
+          class="text-xl sm:text-2xl font-medium text-center whitespace-nowrap text-[#010313]/50 translate-y-3 w-full"
         >
-          my projects
+          luke.boo
         </p>
       </div>
       <img
@@ -84,7 +80,7 @@
     </div>
     <div class="w-full bg-[#DBDCDD] h-[40px] sm:min-h-[70px]" />
   </div>
-  <div class="block sm:hidden w-full h-20 bg-[#DBDCDD]" />
+  <div class="block sm:hidden w-full h-24 bg-[#DBDCDD]" />
 </main>
 
 <style>
