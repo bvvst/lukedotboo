@@ -4,7 +4,7 @@
 </script>
 
 <Card
-  href="https://youtu.be/tOkL6-tHAxs?si=_2Oc_ejzNPbSwE7b"
+  href="https://youtu.be/Twi92KYddW4?si=LM1JvqEPtILYxLQd"
   additionalClasses="bg-[#F7F7F7]"
 >
   <img

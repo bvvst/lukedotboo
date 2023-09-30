@@ -9,6 +9,7 @@
   import GithubCard from "$lib/components/cards/GithubCard.svelte";
   import SpotifyCard from "$lib/components/cards/SpotifyCard.svelte";
   import MiiChannel from "$lib/components/cards/MiiChannel.svelte";
+  import WhopCard from "$lib/components/cards/WhopCard.svelte";
   import Twitter from "$lib/assets/twitter.svg";
   import Email from "$lib/assets/email.svg";
 
@@ -43,7 +44,7 @@
 
       <MiiChannel />
       <GomokuCard />
-      <EmptyCard />
+      <WhopCard />
 
       <FilterCard />
       <GithubCard />

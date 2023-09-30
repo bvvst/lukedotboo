@@ -18,7 +18,7 @@
       >vanish.so</span
     >
     <p
-      class="font-medium translate-y-6 group-hover:translate-y-0 z-10 text-white/80 opacity-0 group-hover:opacity-100 transition"
+      class="font-medium translate-y-6 group-hover:translate-y-0 z-10 text-[#a78cea] opacity-0 group-hover:opacity-100 transition"
     >
       secure vanishing notes
     </p>
