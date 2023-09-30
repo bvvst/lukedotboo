@@ -3,6 +3,40 @@
 @tailwind utilities;
 
 @layer utilities {
+  .fade-in-bottom {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fadeInFromBottom 1s forwards;
+  }
+
+  @keyframes fadeInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(200px);
+    animation: fadeIn 1s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .grid-layout {
     grid-template-columns: repeat(3, max(256px, 1fr));
   }
