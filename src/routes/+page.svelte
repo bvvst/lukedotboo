@@ -63,13 +63,13 @@
   <div class="w-full flex flex-col sm:mb-0 relative">
     <a
       href="https://twitter.com/bvvst"
-      class="z-10 absolute transition-shadow shadow-md hover:shadow-lg rounded-full flex ring-1 ring-[#C5C7CA] bg-[#EEEEEE] w-10 h-10 sm:h-20 sm:w-20 top-2.5 left-2.5 sm:top-6 sm:left-6"
+      class="z-10 absolute transition-all shadow-md hover:shadow-lg rounded-full flex ring-1 hover:ring-4 ring-[#C5C7CA] hover:ring-blue-400 bg-[#EEEEEE] w-10 h-10 sm:h-20 sm:w-20 top-2.5 left-2.5 sm:top-6 sm:left-6"
     >
       <img class="m-auto" src={Twitter} alt="" />
     </a>
     <a
       href="mailto:hi@luke.boo"
-      class="z-10 absolute transition-shadow shadow-md hover:shadow-lg rounded-full flex ring-1 ring-[#C5C7CA] bg-[#EEEEEE] w-10 h-10 sm:h-20 sm:w-20 top-2.5 right-2.5 sm:top-6 sm:right-6"
+      class="z-10 absolute transition-all shadow-md hover:shadow-lg rounded-full flex ring-1 hover:ring-4 ring-[#C5C7CA] hover:ring-blue-400 bg-[#EEEEEE] w-10 h-10 sm:h-20 sm:w-20 top-2.5 right-2.5 sm:top-6 sm:right-6"
     >
       <img class="m-auto" src={Email} alt="" />
     </a>
