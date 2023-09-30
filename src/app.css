@@ -39,8 +39,8 @@
     cursor: none;
   } */
   * {
-    cursor: none !important;
-    /* cursor: url("cursor.svg"), auto !important; */
+    /* cursor: none !important; */
+    cursor: url("cursor.svg"), auto !important;
   }
   /* *:active {
     cursor: url("cursor-clicked.svg"), auto;

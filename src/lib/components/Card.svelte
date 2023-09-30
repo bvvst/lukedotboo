@@ -1,13 +1,16 @@
 <script>
   export let additionalClasses = "";
+  export let href = "/";
+
   import clsx from "clsx";
 </script>
 
-<button
+<a
+  {href}
   class={clsx(
-    "bg-[#F7F7F7] p-4 rounded-3xl w-64 h-36 channel-shadow group hover:scale-[1.01] transition-transform",
+    "rounded-3xl flex overflow-hidden relative w-64 h-36 channel-shadow group hover:scale-[1.01] transition-transform",
     additionalClasses
   )}
 >
   <slot />
-</button>
+</a>

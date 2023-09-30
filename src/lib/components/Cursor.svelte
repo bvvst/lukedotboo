@@ -6,10 +6,20 @@
   let clicked = false;
   let visible = false;
 
+  function throttle(func: any, delay: number) {
+    let lastCall = 0;
+    return (...args: any[]) => {
+      const now = Date.now();
+      if (now - lastCall < delay) return;
+      lastCall = now;
+      return func(...args);
+    };
+  }
+
   onMount(() => {
     let animationFrameId: number;
 
-    const handleMouseMove = (e: MouseEvent) => {
+    const handleMouseMove = throttle((e: MouseEvent) => {
       // Cancel the previous frame if it exists
       if (animationFrameId !== null) {
         cancelAnimationFrame(animationFrameId);
@@ -22,7 +32,7 @@
         left = e.pageX + "px";
         top = e.pageY + "px";
       });
-    };
+    }, 6);
 
     const handleMouseDown = () => {
       clicked = true;
@@ -62,9 +72,9 @@
 <img
   style="left: {left}; top: {top}; display: {visible ? 'block' : 'none'}"
   class={clsx(
-    "absolute drop-shadow-md  z-20 pointer-events-none origin-top-left transition-transform opacity-100",
+    "absolute drop-shadow-md  z-20 pointer-events-none origin-top-left transition-transform opacity-40",
     clicked && "scale-105"
   )}
-  src="/cursor.svg"
+  src="/trail.svg"
   alt=""
 />

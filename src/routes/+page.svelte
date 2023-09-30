@@ -3,6 +3,9 @@
   import EmptyCard from "$lib/components/EmptyCard.svelte";
   import MoreSoonCard from "$lib/components/MoreSoonCard.svelte";
   import { onMount } from "svelte";
+  import FilterCard from "$lib/components/cards/FilterCard.svelte";
+  import GomokuCard from "$lib/components/cards/GomokuCard.svelte";
+  import VanishCard from "$lib/components/cards/VanishCard.svelte";
 
   onMount(() => {
     const container: HTMLElement | null =
@@ -30,15 +33,14 @@
       class="grid grid-rows-3 grid-flow-col gap-4 p-8 px-14 w-full max-w-7xl mx-auto horizontal-scroll"
     >
       <MoreSoonCard />
-
-      <EmptyCard />
-      <EmptyCard />
-
-      <EmptyCard />
-      <EmptyCard />
+      <VanishCard />
       <EmptyCard />
 
+      <FilterCard />
       <EmptyCard />
+      <EmptyCard />
+
+      <GomokuCard />
       <EmptyCard />
       <EmptyCard />
 

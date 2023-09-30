@@ -3,9 +3,12 @@
   import Disc from "$lib/assets/disc.png";
 </script>
 
-<Card>
+<Card
+  href="https://youtu.be/tOkL6-tHAxs?si=_2Oc_ejzNPbSwE7b"
+  additionalClasses="bg-[#F7F7F7]"
+>
   <img
-    class="w-28 h-28 m-auto group-hover:animate-spin-slow duration-300"
+    class="w-28 h-28 m-auto group-hover:rotate-90 duration-300"
     src={Disc}
     alt="Disc"
   />
