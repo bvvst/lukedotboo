@@ -18,12 +18,12 @@
     >
       coming soon
     </p>
-    <div class="absolute top-4 left-5 flex gap-2">
+    <div class="absolute top-4 left-5 flex gap-1">
       <img class="h-14 rendering-pixelated" src="sprites/luke.png" alt="" />
-      <img class="h-14 rendering-pixelated" src="sprites/blank.png" alt="" />
-      <img class="h-14 rendering-pixelated" src="sprites/blank.png" alt="" />
-      <img class="h-14 rendering-pixelated" src="sprites/blank.png" alt="" />
-      <img class="h-14 rendering-pixelated" src="sprites/blank.png" alt="" />
+      <img class="h-14 rendering-pixelated" src="sprites/alex.png" alt="" />
+      <img class="h-14 rendering-pixelated" src="sprites/kyle.png" alt="" />
+      <img class="h-14 rendering-pixelated" src="sprites/src.png" alt="" />
+      <img class="h-14 rendering-pixelated" src="sprites/pizza.png" alt="" />
     </div>
   </div>
 </Card>
