@@ -7,6 +7,7 @@
 </script>
 
 <a
+  target="_blank"
   {href}
   class={clsx(
     "rounded-3xl flex relative w-64 h-36 group hover:scale-[1.01] transition-transform",
